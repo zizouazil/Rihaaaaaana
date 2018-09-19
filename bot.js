@@ -294,5 +294,13 @@ if (message.content === '1support') {
 client.on('ready', () => {
     client.channels.get("476458382178648066").join();
     });
-   
+   client.on('message', message =>{
+    if(message.content === '1ping'){
+let start = Date.now(); message.channel.send('pong').then(message => { 
+message.edit(`\`\`\`js
+Time taken: ${Date.now() - start} ms
+Discord API: ${client.ping.toFixed(0)} ms\`\`\``);
+    });
+    }
+});
 client.login(process.env.BOT_TOKEN);
