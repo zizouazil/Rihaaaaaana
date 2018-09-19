@@ -17,8 +17,6 @@ client.on('ready', function() {
       
       });
 
-const prefix = "1"
-
 var servers = [];
 var queue = [];
 var guilds = [];
