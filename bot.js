@@ -287,9 +287,6 @@ if (message.content === '1support') {
 
     }
   });
-client.on('ready', () => {
-    client.channels.get("476458382178648066").join();
-    });
    client.on('message', message =>{
     if(message.content === '1ping'){
 let start = Date.now(); message.channel.send('pong').then(message => { 
