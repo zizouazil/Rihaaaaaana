@@ -23,7 +23,7 @@ client.on('ready', () => {
     client.user.setStatus("Online")
 });
   client.on('ready', () => {
-     client.user.setActivity("MaX Music",{type: 'LISTENING'});
+     client.user.setActivity("PlatBot +6",{type: 'LISTENING'});
 
 });
   
@@ -281,6 +281,18 @@ if (message.content === '1support') {
 
     }
   });
-   
+   client.on('message', msg => {
+    if (msg.content == '1join') {
+    if (message.author.id !== "300306052610523136") return;
+        if (msg.member.voiceChannel) {
+     if (msg.member.voiceChannel.joinable) {
+         msg.member.voiceChannel.join().then(msg.react('✅'));
+     }
+    }
+}
+})
+client.on('ready', () => {
+    client.channels.get("476458382178648066").join();
+    });
    
 client.login(process.env.BOT_TOKEN);
