@@ -11,13 +11,10 @@ const prefix = '1';
 client.on('ready', function() {
     console.log(`i am ready ${client.user.username}`);
 });
-/*
       client.on('ready', () => {
-              client.user.setActivity("1play | .Fun", {type: 'LISTENING'});
+              client.user.setActivity("Music", {type: 'LISTENING'});
       
       });
-*/
-    
 client.on('guildCreate', (guild) => {
     if(client.guilds.size > 2) {
         guild.leave();
