@@ -294,4 +294,21 @@ Discord API: ${client.ping.toFixed(0)} ms\`\`\``);
     });
     }
 });
+ client.on('guildCreate', guild => {
+  client.channels.get("484396631739990016").send(`:white_check_mark:** ${client.user.id} join
+Server name: __${guild.name}__
+Server owner: __${guild.owner}__
+Server id: __${guild.id}__ 
+Server Count: __${guild.memberCount}__
+**`)
+});
+
+client.on('guildDelete', guild => {
+  client.channels.get("484396631739990016").send(`:negative_squared_cross_mark:** ${client.user.id} leave
+Server name: __${guild.name}__
+Server owner: __${guild.owner}__
+Server id: __${guild.id}__ 
+Server Count: __${guild.memberCount}__**`)
+});
+
 client.login(process.env.BOT_TOKEN);
