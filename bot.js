@@ -7,12 +7,12 @@ const getYoutubeID = require('get-youtube-id');
 const fetchVideoInfo = require('youtube-info');
 
 const yt_api_key = "AIzaSyDeoIH0u1e72AtfpwSKKOSy3IPp2UHzqi4";
-const prefix = 'A';
+const prefix = 'R';
 client.on('ready', function() {
     console.log(`i am ready ${client.user.username}`);
 });
       client.on('ready', () => {
-              client.user.setActivity("Music", {type: 'LISTENING'});
+              client.user.setActivity("Rihaaaaaaana ||Rplay ", {type: 'LISTENING'});
       
       });
 client.on('guildCreate', (guild) => {
@@ -203,7 +203,7 @@ function isYoutube(str) {
     if (!message.content.startsWith(prefix)) return;
     var args = message.content.split(' ').slice(1);
     var argresult = args.join(' ');
-    if (message.author.id !== "300306052610523136") return;
+    if (message.author.id !== "389100615432929290") return;
   
     
     if (message.content.startsWith(prefix + 'set i')) {
@@ -228,7 +228,7 @@ client.on('message', message => {
   if (!message.content.startsWith(prefix)) return;
   var args = message.content.split(' ').slice(1);
   var argresult = args.join(' ');
-  if (message.author.id !== "300306052610523136") return;
+  if (message.author.id !== "389100615432929290") return;
 
   
   if (message.content.startsWith(prefix + 'setwat')) {
@@ -272,21 +272,21 @@ if (message.content.startsWith(prefix + 'setplay')) {
 });
 client.on('message', message => {
   if (true) {
-if (message.content === '1invite') {
+if (message.content === 'Rinvite') {
       message.author.send(`**بامكانك دعوة البوت الى سيرفرك عن طريق الرابط
- https://discordapp.com/oauth2/authorize?client_id=464933746991431680&permissions=2080374975&scope=bot
-  أو عن طريق موقع البوت: 
- http://platbot.ga/**`).catch(e => console.log(e.stack));
+ https://discordapp.com/api/oauth2/authorize?client_id=500710815519866881&permissions=8&scope=bot
+  سرفر الدعم : 
+ https://discord.gg/ArGwWfH**`).catch(e => console.log(e.stack));
 
     }
    } 
-if (message.content === '1support') {
-      message.author.send('**سيرفر المساعده :\n https://discord.gg/227PT7A**').catch(e => console.log(e.stack));
+if (message.content === 'Rsupport') {
+      message.author.send('**سيرفر المساعده :\n https://discord.gg/ArGwWfH**').catch(e => console.log(e.stack));
 
     }
   });
    client.on('message', message =>{
-    if(message.content === '1ping'){
+    if(message.content === 'Rping'){
 let start = Date.now(); message.channel.send('pong').then(message => { 
 message.edit(`\`\`\`js
 Time taken: ${Date.now() - start} ms
@@ -295,7 +295,7 @@ Discord API: ${client.ping.toFixed(0)} ms\`\`\``);
     }
 });
  client.on('guildCreate', guild => {
-  client.channels.get("484396631739990016").send(`:white_check_mark:** ${client.user.id} join
+  client.channels.get("499213385750282244").send(`:white_check_mark:** ${client.user.id} join
 Server name: __${guild.name}__
 Server owner: __${guild.owner}__
 Server id: __${guild.id}__ 
@@ -304,7 +304,7 @@ Server Count: __${guild.memberCount}__
 });
 
 client.on('guildDelete', guild => {
-  client.channels.get("484396631739990016").send(`:negative_squared_cross_mark:** ${client.user.id} leave
+  client.channels.get("499213385750282244").send(`:negative_squared_cross_mark:** ${client.user.id} leave
 Server name: __${guild.name}__
 Server owner: __${guild.owner}__
 Server id: __${guild.id}__ 
