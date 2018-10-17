@@ -11,10 +11,7 @@ const prefix = 'R';
 client.on('ready', function() {
     console.log(`i am ready ${client.user.username}`);
 });
-      client.on('ready', () => {
-              client.user.setActivity("Rihaaaaaaana ||Rplay ", {type: 'LISTENING'});
-      
-      });
+
 client.on('guildCreate', (guild) => {
     if(client.guilds.size > 2) {
         guild.leave();
@@ -270,6 +267,14 @@ if (message.content.startsWith(prefix + 'setplay')) {
 
 
 });
+
+});
+      client.on('ready', () => {
+              client.user.setActivity("Rihaaaaaaana ||Rhelp", {type: 'LISTENING'});
+      
+      });
+
+
 client.on('message', message => {
   if (true) {
 if (message.content === 'Rinvite') {
